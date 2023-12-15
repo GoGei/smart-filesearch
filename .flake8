@@ -1,0 +1,13 @@
+[flake8]
+ignore = W504,S308,E501
+exclude = jsapp/*,
+          env/*,
+          htdocs/*,
+          static/*,
+
+
+max-complexity = 100
+max-line-length = 120
+
+per-file-ignores =
+    *settings*.py: F403,F405
