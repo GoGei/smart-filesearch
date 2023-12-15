@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart filesearch</title>
+
+  <link href="{{ url_for('static', path='css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', path='css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+
+</head>
+<body>
+<div id="root">
+  <form method="post" action="/ask/" id="processAIRequestForm">
+    <div class="form-group">
+      <label for="user_query">Question</label>
+      <input type="text" class="form-control" id="user_query" name="user_query" placeholder="What is your question?">
+    </div>
+    <div class="form-group">
+      <label for="response">Response</label>
+      <textarea type="text" class="form-control" id="response" placeholder="Response" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="sources">Sources</label>
+      <textarea type="text" class="form-control" id="sources" placeholder="Sources" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" id="processAIRequest">Submit</button>
+  </form>
+</div>
+<script src="{{ url_for('static', path='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', path='js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', path='custom/js/application.js') }}"></script>
+</body>
+</html>
