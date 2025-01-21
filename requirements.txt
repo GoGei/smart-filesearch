@@ -6,11 +6,12 @@ python-dotenv==1.0.0
 openai==0.28.1
 tiktoken==0.5.2
 unstructured==0.11.2
-unstructured[pdf]
+unstructured-inference==0.7.15
+unstructured.pytesseract==0.3.13
 
 fastapi==0.105.0
 uvicorn==0.24.0.post1
-uvicorn[standard]
+# uvicorn[standard]
 
 fabric==2.7.0
 invocations==3.3.0
