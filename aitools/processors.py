@@ -69,7 +69,7 @@ class AIToolProcessor(Singleton):
     def create_vectors(cls,
                        openai_embeddings: OpenAIEmbeddings,
                        client_settings: Settings,
-                       files_path: str = settings.AI_SOURCE_FILES,
+                       files_path: str = settings.AI_SOURCE_FILES_FULL,
                        chunk_size: int = settings.AI_CHUNK_SIZE,
                        ):
         print('AITools create vectors')
