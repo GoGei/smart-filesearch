@@ -43,4 +43,5 @@ db/
 configs/*
 !configs/example.py
 aitools/files/
+aitools/files_other/
 aitools/db/
